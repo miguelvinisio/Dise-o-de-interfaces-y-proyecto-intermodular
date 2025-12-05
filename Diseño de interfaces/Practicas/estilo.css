@@ -1,0 +1,134 @@
+body{
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        background-color: aqua;
+        padding: 15px;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+    }
+    #flexible{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background:fixed;
+        background-position: center;
+        padding: 400px;
+        background-size: cover;
+        background-image: url(../imagenes/imagen.png);
+    }
+    #texto-imagen{
+
+        text-align: center;
+        color: white;
+        font-size: xx-large;
+        
+    }
+    #segundo::after{
+        content: "\01F50E";
+    }
+    .pie{
+        font-size: x-large;
+        text-align: center;
+        background-color: rgb(223, 88, 88);
+        padding: 50px;
+    }
+    footer{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: bisque;
+    }
+    ul{
+        list-style-type: none;
+    }
+    #hamburguesa{
+        display: none;
+    }
+    @media (max-width:600px){
+    
+
+    
+
+
+    header{
+        background-color: rgb(15, 185, 10);
+        padding: 15px;
+        display: flex;
+        align-items: center;
+    }
+        #imagen{
+        justify-content: center;
+        
+        background-repeat: no-repeat;
+        text-align: center;
+        color: white;
+        background-size: cover;
+        font-size: xx-large;
+        
+    }
+    .pie{
+        font-size: x-large;
+        text-align: center;
+        background-color: rgb(10, 2, 116);
+        padding: 50px;
+    }
+    footer{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: bisque;
+    }
+    ol{
+    display: none;
+}
+    input:checked  ~ ol{
+    display:block;
+}
+    input {
+    display: none;
+}
+    #perro{
+        display: none;
+        
+    }
+    #hamburguesa{
+        display: block;
+        justify-content: right;
+    }
+    .boton_burguer{
+    display: block;
+    background: lightgrey;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid grey;
+    }
+    #segundo{
+        display: none;
+    }
+    #menu-burguer{
+        display: none;
+    }
+    #etiqueta{
+        cursor: pointer;
+        box-sizing: border-box;
+        display: inline-block;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+    }
+
+    footer{
+        display: block;
+        text-align: center;
+    }
+
+    }

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprite</title>
+</head>
+<style>
+    #sprite{
+        /*dependiendo de en cuantas imagenes se divida el sprite esto el width cambia*/
+        width: 112px; ;
+        height: 156px;
+        background-image: url("/imagenes/bernardo.png");
+        animation: caminar 0.7s steps(6)  infinite,mover 6s infinite;
+
+    }
+    @keyframes caminar {
+        to{background-position: -672px;}
+
+    }
+    @keyframes mover {
+        0%{translate: 0;}
+        50%{translate: 600px;}
+        100%{translate: 0;}
+        
+    }
+    @keyframes retroceso {
+        0%{scale: 1 1;}
+        
+        
+    }
+
+</style>
+<body>
+    <div id="sprite"></div>
+</body>
+</html>

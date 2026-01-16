@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #primero{
+        /* si position es relative em, la posicion sera relativa al objeto aplicado y teniendo de refencia al primer padre que tenga position definido*/
+        position: relative;
+    }
+    #segundo{
+        position: sticky;
+        top: 100px;
+        /*solo se puede poner un left o un rigth */
+        left: 30px;
+
+    }
+    #container{
+        position: relative;
+        margin-top: 400px;
+        background-color: aquamarine;
+    }
+    .caja{
+        width: 200px;
+        height: 200px;
+        border: 1px solid #6666;
+        font-size: 40px;
+    }
+
+</style>
+<body>
+    <!--las clases se pueden repetir y las ids no-->
+    <div id="container">
+    <div class="caja" id="primero">1</div>
+    <div class="caja" id="segundo">2</div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+</body>
+</html>

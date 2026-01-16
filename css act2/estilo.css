@@ -1,0 +1,31 @@
+.imagen{
+    width: 100%;
+}
+
+@media (max-width:600px){
+    #columna{
+        columns: 1;
+    }
+}
+@media (min-width:601px) and (max-width:1024px){
+    #columna{
+        columns: 2;
+    }
+}
+@media(min-width:1025px) and (max-width:1399px) and (orientation: landscape){
+    #columna{
+        columns: 3;
+    }
+}
+@media(min-width:1400px){
+    #columna{    
+        columns: 4;
+        margin:auto;
+        width: 1400px;
+}
+}
+@media print{
+    #columna{
+        columns: 2;
+    }
+}

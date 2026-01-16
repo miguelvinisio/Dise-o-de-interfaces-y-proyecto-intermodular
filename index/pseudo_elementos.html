@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   /* Los pseudoelementos ::before y ::after permiten hacer referencia a «justo antes del elemento» y «justo después 
+    del elemento», respectivamente. Además de selectores básicos como clase o id, combinadores, atributos o pseudoclases, puedes añadir un pseudoelemento, precedido por ::. En 
+    el caso del pseudoelemento ::before, el navegador se encargará de añadir contenido antes del inicio de la etiqueta de apertura del elemento que has seleccionado con 
+    el resto del selector:*/
+
+q::before {
+  content: "pero la queria tanto ";
+  color: red;
+}
+q::after {
+  content: "que daba igual ";
+  color: red;
+}
+</style>
+<body>
+    <p>Y dije <q>Hola, ¿qué tal?</q>, entre susurros.</p>
+</body>
+</html>

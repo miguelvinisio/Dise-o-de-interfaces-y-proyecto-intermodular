@@ -1,0 +1,25 @@
+#sprite, #sprite2 {
+    width: 96px;
+    height: 100px;
+    background-repeat: no-repeat;
+}
+
+/* Animación de disparar */
+.disparar {
+    background-image: url("/proyecto_intermodular/sprites/doom_disparar.png");
+    animation: disparar 0.7s steps(6) forwards;
+}
+
+/* Animación de recargar */
+.recargar {
+    background-image: url("/proyecto_intermodular/sprites/doom_recargar.png");
+    animation: recargar 0.7s steps(6) forwards;
+}
+
+@keyframes disparar {
+    to { background-position: -672px; }
+}
+
+@keyframes recargar {
+    to { background-position: -672px; }
+}

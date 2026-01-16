@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{background-color: pink;}
+    .layout{
+        text-align: center;
+        color: black;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 100px 100px 100px ;
+        gap: 10px;
+    }
+    .header{
+        background:yellow;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1 ;
+        grid-row-end: 2;
+    }
+    .aside{
+        background: blue;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end:3;
+    }
+    .main{
+        background: red;
+        grid-column-start: 2;
+        grid-column-end:2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+    .footer{
+        background: white;
+        grid-column-start: 1;
+        grid-column-end:3;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+</style>
+<body>
+<div class="layout">
+<header class="header">Header</header>
+<aside class="aside">Aside</aside>
+<main class="main">Main</main>
+<footer class="footer">Footer</footer>
+</div>
+</body>
+</html>

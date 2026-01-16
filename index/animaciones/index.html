@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .element{
+        position: absolute;
+        border-radius: 100%;
+        width: 100px;
+        height: 100px;
+        background: gray;
+        animation:change-color 5s,
+        mover-arriba 1000s ease-out;
+        animation-iteration-count: infinite;
+    }
+    @keyframes change-color {
+        from{background: red;}
+        to{background: purple;}
+    }
+    @keyframes mover-arriba{
+        0%{
+            top:0px;
+            left: 0px;
+
+        }
+        25%{
+            top: 0%;
+            left:calc(100% - 100px);
+
+        }
+        50%{
+            top:calc(100% - 100px);
+            left: calc(100% - 100px);
+
+        }
+        75%{
+            top:calc(100% - 100px);
+            left: 0%;
+
+        }
+        100%{
+            top:0%;
+            left: 0%;
+        }
+    }
+</style>
+
+<body>
+    <div class="element"></div>
+</body>
+</html>

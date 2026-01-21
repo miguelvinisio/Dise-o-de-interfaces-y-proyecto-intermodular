@@ -1,0 +1,29 @@
+.fondo{
+    background-image: url(/sprites/infierno.png);
+    background-size: cover;
+
+}
+
+.personaje{
+    width: 97.5px;
+    height: 128px;
+    image-rendering: pixelated;
+    background-image: url('/sprites/sprite.png');
+    background-repeat: no-repeat;
+    animation: caminar 1s steps(8) infinite;
+    animation-play-state: paused;
+
+}
+.personaje.izquierda{
+    transform: scaleX(-1);
+}
+
+@keyframes caminar {
+    from{
+        background-position:0 0;
+    }
+    to{
+        background-position:-780px 0;
+    }
+    
+}
